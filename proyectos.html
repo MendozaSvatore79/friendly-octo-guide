@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Proyectos | Mi sitio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/proyectos.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="topbar" aria-label="Principal">
+			<a class="brand" href="index.html">Mi sitio</a>
+			<div class="nav-links">
+				<a href="index.html">Inicio</a>
+				<a href="productos.html">Productos</a>
+				<a href="servicios.html" aria-current="page">Servicios</a>
+			</div>
+		</nav>
+
+		<section class="hero">
+			<div class="hero-copy">
+				<p class="eyebrow">Portafolio 2026</p>
+				<h1>Proyectos creados para convertir ideas en resultados visibles.</h1>
+				<p>
+					Revisa una seleccion de trabajos con enfoque en producto, diseño y desarrollo.
+					La pagina permite filtrar por tipo de proyecto y buscar por nombre o descripcion.
+				</p>
+				<div class="hero-actions">
+					<a class="button button-primary" href="#catalogo">Ver proyectos</a>
+					<a class="button button-secondary" href="#filtros">Explorar filtros</a>
+				</div>
+			</div>
+
+			<aside class="hero-panel" aria-label="Resumen de proyectos">
+				<div>
+					<span class="panel-label">Entregas</span>
+					<strong>12 completas</strong>
+				</div>
+				<div>
+					<span class="panel-label">En progreso</span>
+					<strong>3 activos</strong>
+				</div>
+				<div>
+					<span class="panel-label">Impacto</span>
+					<strong>+28% conversion</strong>
+				</div>
+			</aside>
+		</section>
+	</header>
+
+	<main>
+		<section class="catalog-shell" id="catalogo">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Catalogo</p>
+					<h2>Seleccion de proyectos destacados</h2>
+				</div>
+				<p class="section-copy">
+					Cada proyecto muestra su categoria, estado y resultado principal para navegar rapido.
+				</p>
+			</div>
+
+			<div class="filters" id="filtros">
+				<label class="search-field" for="projectSearch">
+					<span>Buscar proyecto</span>
+					<input id="projectSearch" type="search" placeholder="Escribe un nombre, area o resultado">
+				</label>
+
+				<div class="filter-group" role="tablist" aria-label="Filtros de proyecto">
+					<button class="filter-button is-active" type="button" data-filter="all">Todos</button>
+					<button class="filter-button" type="button" data-filter="Web">Web</button>
+					<button class="filter-button" type="button" data-filter="UX">UX</button>
+					<button class="filter-button" type="button" data-filter="Branding">Branding</button>
+					<button class="filter-button" type="button" data-filter="Ecommerce">Ecommerce</button>
+				</div>
+			</div>
+
+			<p class="results-meta" id="resultsMeta" aria-live="polite"></p>
+
+			<section class="project-grid" id="projectGrid" aria-live="polite"></section>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>Pagina de proyectos pensada para mostrar trabajos, filtros y resultados con una interfaz clara.</p>
+	</footer>
+
+	<script src="js/proyectos.js"></script>
+</body>
+</html>
