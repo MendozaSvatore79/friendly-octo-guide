@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Productos | Mi sitio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/productos.css">
+</head>
+<body>
+	<header class="site-header">
+		<nav class="topbar" aria-label="Principal">
+			<a class="brand" href="index.html">Mi sitio</a>
+			<div class="nav-links">
+				<a href="index.html">Inicio</a>
+				<a href="servicios.html" aria-current="page">Servicios</a>
+                <a href="proyectos.html" aria-current="page">Proyectos</a>
+				<a href="#destacados">Destacados</a>
+			</div>
+		</nav>
+
+		<section class="hero">
+			<div class="hero-copy">
+				<p class="eyebrow">Coleccion 2026</p>
+				<h1>Productos pensados para trabajar mejor y vender mas.</h1>
+				<p>
+					Explora una seleccion curada de articulos listos para destacar en tu catalogo,
+					con una interfaz clara, rapida y adaptable a moviles.
+				</p>
+				<div class="hero-actions">
+					<a class="button button-primary" href="#catalogo">Ver catalogo</a>
+					<a class="button button-secondary" href="#filtros">Filtrar productos</a>
+				</div>
+			</div>
+
+			<aside class="hero-panel" aria-label="Resumen de la tienda">
+				<div>
+					<span class="panel-label">Disponibles</span>
+					<strong>24 productos</strong>
+				</div>
+				<div>
+					<span class="panel-label">Categorias</span>
+					<strong>4 colecciones</strong>
+				</div>
+				<div>
+					<span class="panel-label">Envio</span>
+					<strong>24-48 horas</strong>
+				</div>
+			</aside>
+		</section>
+	</header>
+
+	<main>
+		<section class="catalog-shell" id="catalogo">
+			<div class="section-heading">
+				<div>
+					<p class="eyebrow">Catalogo</p>
+					<h2>Encuentra el producto adecuado</h2>
+				</div>
+				<p class="section-copy">
+					Usa el buscador o los filtros para explorar el catalogo sin perder contexto.
+				</p>
+			</div>
+
+			<div class="filters" id="filtros">
+				<label class="search-field" for="productSearch">
+					<span>Buscar producto</span>
+					<input id="productSearch" type="search" placeholder="Escribe un nombre o categoria">
+				</label>
+
+				<div class="filter-group" role="tablist" aria-label="Filtros de categoria">
+					<button class="filter-button is-active" type="button" data-filter="all">Todos</button>
+					<button class="filter-button" type="button" data-filter="Tecnologia">Tecnologia</button>
+					<button class="filter-button" type="button" data-filter="Hogar">Hogar</button>
+					<button class="filter-button" type="button" data-filter="Accesorios">Accesorios</button>
+					<button class="filter-button" type="button" data-filter="Oficina">Oficina</button>
+				</div>
+			</div>
+
+			<p class="results-meta" id="resultsMeta" aria-live="polite"></p>
+
+			<section class="product-grid" id="productGrid" aria-live="polite"></section>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>Pagina de productos creada para mostrar catalogo, busqueda y filtros de forma simple.</p>
+	</footer>
+
+	<script src="js/productos.js"></script>
+</body>
+</html>
